@@ -9432,6 +9432,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/* this font is used in front page heading using class name font-heading */
 body {
   font-family: "Work Sans", Arial, sans-serif;
   background: #fff;
@@ -9474,8 +9475,8 @@ h5,
   font-weight: 400;
 }
 
-.Long-chang {
-  font-family: "Long Cang", cursive;
+.font-heading {
+  font-family: "Zhi Mang Xing", "Long Cang", cursive;
 }
 
 .text-primary {

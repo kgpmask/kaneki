@@ -5,8 +5,9 @@ $font-primary: 'Work Sans',
 Arial,
 sans-serif;
 
-/* this font is used in front page heading with class named .Long-chang */
-$font-heading: 'Long Cang',
+/* this font is used in front page heading using class name font-heading */
+$font-heading: 'Zhi Mang Xing',
+'Long Cang',
 cursive;
 
 $white: #fff;
@@ -89,7 +90,7 @@ h5,
 	font-weight: 400;
 }
 
-.Long-chang {
+.font-heading {
 	font-family: $font-heading;
 }
 
