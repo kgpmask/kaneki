@@ -10219,6 +10219,7 @@ h5,
   width: 100%;
   padding: 10% 7%;
   display: block;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -11682,6 +11683,22 @@ textarea.form-control {
   color: #ccc;
 }
 
+@media only screen and (max-width:768px){
+  .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .categories li.active a,
 .sidelink li.active a {
   color: #404044;
@@ -11791,3 +11808,14 @@ textarea.form-control {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/*Customised changes*/
+@media (min-width: 768px) {
+  .block-3 .text,
+  .block-3 .image {
+    width: 50%;
+    padding: 1% 7%;
+    display: block;
+    text-align: center;
+  }
+}
