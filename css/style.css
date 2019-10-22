@@ -9902,9 +9902,10 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
 .btn.btn-primary {
-  background: #fce7f1;
-  border: 2px solid #fce7f1;
-  color: #ee76ad;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  border: 2px solid white;
+  color: white;
 }
 
 .btn.btn-primary:hover {
