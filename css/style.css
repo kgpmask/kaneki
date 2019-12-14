@@ -11835,3 +11835,33 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     margin-bottom: -20%;
   }
 }
+
+/*Styling for back to top button*/
+
+#back2top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 55px;
+  right: 0;
+  background-color: #4d647b;
+  color: #FFF;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 8px 8px 0px 0px;
+}
+
+#back2top:hover {
+  background-color: #DDF;
+  color: #000;
+}
