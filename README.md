@@ -6,12 +6,12 @@
 [![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmask-tech%2Fkaneki)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fmask-tech%2Fkaneki)
 ---
 # Current Planned Structure of the website:
-- Standard Navbar with links to different parts of the page
-- Background cover with MASK Heading in japanese sense font
-- About Us
-- Fan Art
-  - Links to send Fan art
-- AMV video embeded
-- Coming Soon Poster of the Manga
-- Contact us with fb and mail links
+- Standard Navbar with links to different parts of the page.
+- Background cover with MASK Heading in Japanese sense font.
+- About Us.
+- Fan Art.
+  - Links to send Fan art.
+- AMV video embeded.
+- Coming Soon Poster of the Manga.
+- Contact us with fb and mail links.
 
