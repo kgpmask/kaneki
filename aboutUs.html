@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cherry+Bomb&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <style type="text/css">
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+            }
+            #wrapper
+            {
+                width:100%;
+                height: auto;
+            }
+            #header
+            {
+                width: 100%;
+                height: auto;
+                display: flex;
+                background-color: white;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                position: fixed;
+                top: 0px;
+                z-index: 99;
+            }
+            #logo
+            {
+                width: 17%;
+                height: 4vw;
+                margin-left: 16.5%;
+            }
+            #nav
+            {
+                width: 50%;
+                height: 4vw;
+            }
+            #logo h1
+            {
+                font-family: 'Work Sans';
+                font-size: 1.1vw;
+                font-style: normal;
+                font-weight: 700;   
+                margin-left: 3vw;
+                margin-top: 1vw;
+                color: #404044;
+            }
+            .navbar_list
+            {
+                display: flex;
+                list-style: none;
+                margin-left: 5%;
+                margin-top: 0.8vw;
+            }
+            .navbar_list li
+            {
+                height: auto;
+                padding-left: 1.2vw;
+                padding-right: 1.2vw;
+                padding-top: 0.7vw;
+                padding-bottom: 0.7vw;
+                border-radius: 2vw;
+                margin-left: 0.1%;
+                text-align: center;
+            }
+            .navbar_list li a
+            {
+                text-decoration: none;
+                font-size: 0.92vw;
+                color: #404044;
+                font-family: "Work Sans", Arial, sans-serif;
+                
+            }
+            #navbar_submitFanArt_a
+            {
+                color: white;
+            }
+            #navbar_submitFanArt_li
+            {
+                background-color: #404044;
+            }
+            
+            #container
+            {
+                width: 70%;
+                height: auto;
+                    
+                margin-top: 5vw;
+                margin-left: 15%;
+                display: flex;
+                flex-flow: wrap;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+            }
+            #content_1
+            {
+                width: 100%;
+                height: 35vw;
+                margin-top: 1vw;
+                background: linear-gradient(to bottom right, #343a40, black);
+                border-radius: 1vw;
+                box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+                border-style: outset;
+                border-color: #343a40;
+                border-width: 5px;
+            }
+            #content_1 > h2
+            {
+                font-family: "Work Sans", Arial, sans-serif;
+                font-size: 3vw;
+                color: white;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 10%;
+            }
+            #content_1 > p
+            {
+                color: white;
+                font-family: "Work Sans", Arial, sans-serif;
+                font-size: 1.5vw;
+                text-align: center;
+                margin-top: 5%;
+                font-weight: 200;
+                font-stretch: extra-expanded;
+            }
+            #content_1 > button
+            {
+                width: 15%;
+                margin-left: 42.5%;
+                height: 3.2vw;
+                margin-top: 4%;
+                background-color: transparent;
+                border-radius: 2vw;
+                border-style: solid;
+                color: white;
+                font-size: 0.8vw;
+                transition-duration: 0.3s;
+                transition-property: all;
+            }
+            #content_1 > button:hover
+            {
+                background-color: white;
+                color: hotpink;
+                cursor: pointer;
+                transition-duration: 0.3s;
+                transition-property: all;
+                border-color: hotpink;
+            }
+            .sections
+            {
+                width: 33%;
+                height: 20vw;
+                background-color: white;
+                transform: scale(0.95);
+                margin-top: 3%;
+                border-radius: 1vw;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+                box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+                min-width: 250px;
+                min-height: 150px;
+                display: inline-block;
+                color: white;
+                transition-duration: 0.8s;
+                transition-property: transform;
+            }
+            .sections > h3
+            {
+                text-align: center;
+                font-size: 3vw;
+                font-family: 'Long Cang';
+                font-weight: bolder;
+                margin-top: 1vw;
+            }
+            .sections > p
+            {
+                font-size: 2.5vw;
+                font-weight: bold;
+                font-family: 'Long Cang';
+                text-align: center;
+                margin-top: 5vw;
+            }
+            .sections:hover
+            {
+                transform: scale(1.05);
+                transition-duration: 0.8s;
+                z-index: 1;
+                transition-property: transform;
+            }
+            #sections_1_fanArt
+            {
+                background: linear-gradient(to bottom right, #00ffff, #0051ff);
+            }
+            #sections_2_amv
+            {
+               background: linear-gradient(to bottom right, #ffee00, #e8ae00);
+                color: black;
+            }
+            #sections_3_manga
+            {
+                background: linear-gradient(to bottom right, #00ff33, #2b5412);
+            }
+            #sections_1_fanArt:hover
+            {
+                background-image: url("./images/10790.png");
+                background-size: cover;
+                color: aqua;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: black;
+            }
+            #sections_2_amv:hover
+            {
+                background-image: url("https://media.giphy.com/media/BWZslVd1zXsHK/source.gif");
+                background-size: cover;
+                color: #ffd900;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: black;
+            }
+            #sections_3_manga:hover
+            {
+                background-image: url("./images/manga.jpg");
+                background-size: cover;
+                color: #37ff00;
+                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-color: black;
+            }
+            #team_members_div
+            {
+                margin-top: 15%;
+                width: 100%;
+                height: 50vw;
+                border-radius: 1vw;
+                text-align: center;
+                padding: 2%;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+            }
+            #team_members_div h3
+            {
+                color: grey;
+                font-size: 2.5vw;
+                font-family: 'Cherry Bomb';
+                font-weight: 100;
+                margin-top: 2%;
+                width: 100%;
+                height: auto;
+            }
+            #member1
+            {
+                width: 25%;
+                height: 35vw;
+                transform: skewY(10deg) rotateY(30deg);
+                box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+                background-color: rgba(0,255,255,0.5);
+                border-style: solid;
+                border-width: 1vw;
+                border-image: linear-gradient(to bottom right, #00ffff, #0051ff) 1 100%;
+                transition-duration: 0.5s;
+                transition-property: all;
+                
+            }
+            #member2
+            {
+                width: 25%;
+                height: 35vw;
+                transform: skewY(0deg) rotateY(0deg);
+                box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+                background-color: rgba(255,238,0,0.5);
+                border-style: solid;
+                border-width: 1vw;
+                border-image: linear-gradient(to bottom right, #ffee00, #e8ae00) 1 100%;
+                transition-duration: 0.5s;
+                transition-property: all;
+            }
+            #member3
+            {
+                width: 25%;
+                height: 35vw;
+                transform: skewY(-10deg) rotateY(-30deg);
+                box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+                background-color: rgba(0,255,51,0.5);
+                border-style: solid;
+                border-width: 1vw;
+                border-image: linear-gradient(to bottom right, #00ff33, #2b5412) 1 100%;
+                transition-duration: 0.5s;
+                transition-property: all;
+            }
+            #member1:hover
+            {
+                transform: scale(1.1) skewY(10deg) rotateY(30deg);
+                margin-right: 3%;
+                transition-duration: 0.5s;
+                transition-property: all;
+            }
+            #member2:hover
+            {
+                transform: scale(1.1) skewY(0deg) rotateY(0deg);
+                margin-right: 3%;
+                margin-left: 3%;
+                transition-duration: 0.5s;
+                transition-property: all;
+            }
+            #member3:hover
+            {
+                transform: scale(1.1) skewY(-10deg) rotateY(-30deg);
+                margin-left: 3%;
+                transition-duration: 0.5s;
+                transition-property: all;
+            }
+            .members > img
+            {
+                width: 40%;
+                height: auto;
+                margin-top: 1.5vw;
+                border-style: solid;
+                border-width: 0.1vw;
+                border-color: hotpink;
+                border-radius: 8vw;
+            }
+            .members > h4
+            {
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 1.5vw;
+                margin-top:1vw;
+                color: hotpink;
+            }
+            .members > p
+            {
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 2vw;
+                margin-top:1vw;
+                color: rgba(0,0,0,0.8);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Header starts here-->
+            <div id="header">
+                <div id="logo">
+                    <h1>MASK</h1>
+                </div>
+                <div id="nav">
+                    <ul class="navbar_list">
+                        <li><a href="#" id="navbar_home_a">Home</a></li>
+                        <li><a href="#" id="navbar_aboutUs_a">About Us</a></li>
+                        <li><a href="#" id="navbar_fanArt_a">Fan Art</a></li>
+                        <li><a href="#" id="navbar_amv_a">AMV</a></li>
+                        <li><a href="#" id="navbar_manga_a">Manga</a></li>
+                        <li><a href="#" id="navbar_contactUs_a">Contact Us</a></li>
+                        <li id="navbar_submitFanArt_li"><a href="#" id="navbar_submitFanArt_a">Submit Fan Art</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Header ends here-->
+            
+            <div id="container">
+                <div id="content_1">
+                    <h2>Who are we?</h2>
+                    <p>We are a group of Otakus - Manga and Anime <br>enthusiasts - engaging in Art, AMV making, Manga <br>creation, and Quizzing</p>
+                    <button>Get in Touch</button>
+                </div>
+                <div id="sections_1_fanArt" class="sections">
+                    <h3>Fan Art</h3>
+                    <p>//Fan Art Description here</p>
+                </div>
+                <div id="sections_2_amv" class="sections">
+                    <h3>AMV</h3>
+                    <p>//AMV Description here</p>
+                </div>
+                <div id="sections_3_manga" class="sections">
+                    <h3>Manga</h3>
+                    <p>//Manga Description here</p>
+                </div>
+                
+                <div id="team_members_div">
+                    <h3>#Team Members</h3>
+                    <div id="member1" class="members">
+                        <img src="./images/profile-icon-png-image-free-download-searchpngcom-profile-icon-png-673_673.png">
+                        <h4>NAME</h4>
+                        <p>"Information about person"</p>
+                    </div>
+                    <div id="member2" class="members">
+                        <img src="./images/profile-icon-png-image-free-download-searchpngcom-profile-icon-png-673_673.png">
+                        <h4>NAME</h4>
+                        <p>"Information about person"</p>
+                    </div>
+                    <div id="member3" class="members">
+                        <img src="./images/profile-icon-png-image-free-download-searchpngcom-profile-icon-png-673_673.png">
+                        <h4>NAME</h4>
+                        <p>"Information about person"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
